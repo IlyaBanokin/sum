@@ -1,0 +1,6 @@
+AddDefaultCharset utf-8
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule $ index.php [nocase,last]
+#php_flag display_errors Off
